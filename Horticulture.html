@@ -1,150 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horticulture Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #676767;
-            color: #d3d3d3;
+            background-color: #3a3a3a;
+            color: #D3D3D3;
         }
-
+        .navbar {
+            background-color: #1a1a1a;
+            overflow: hidden;
+            margin-left: 10%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #464646;
+            color: black;
+        }
         .container {
-            width: 60%;
-            margin: auto;
-            background-color: #4D4D4D;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 70%;
+            background-color: #4B4B4B;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
         }
-
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
+        .header-section {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
         }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         h1 {
-            font-size: 2.5em;
+            font-size: 22px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 2px;
         }
-
-        p {
-            margin-bottom: 1em;
+        h2 {
+            font-size: 18px;
+            color: #D3D3D3;
+            margin-top: 40px;
+            margin-bottom: -10px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 2px;
         }
-
-        a {
-            color: #a1c6e7;
-            text-decoration: none;
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #D3D3D3;
         }
-
-        a:hover {
-            text-decoration: underline;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section h2 {
-            color: #a1c6e7;
-        }
-
-        .search-bar {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .search-bar input[type="text"] {
-            padding: 5px;
-            width: 200px;
-        }
-
-        .search-bar button {
-            padding: 5px 10px;
-            margin-left: 5px;
-            background-color: #555;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-
-        .search-bar button:hover {
-            background-color: #777;
+        li {
+            padding: 5px 0;
         }
     </style>
 </head>
-
 <body>
-    <nav>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Plant Types</a>
-            <a href="#">Cultivation Techniques</a>
-            <a href="#">Soil & Water</a>
-            <a href="#">Pest & Disease Control</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
-    </nav>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="branches.html">Branches</a>
+        <a href="practices.html">Practices</a>
+        <a href="tools.html">Tools</a>
+        <a href="plantcare.html">Plant Care</a>
+        <a href="environment.html">Environment</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
     <div class="container">
-        <h1>Welcome to the Horticulture Database</h1>
-        <p>This website is a comprehensive resource for understanding <a href="https://en.wikipedia.org/wiki/Horticulture">horticulture</a>. It includes detailed information on <a href="https://en.wikipedia.org/wiki/Plant">plant types</a>, <a href="https://en.wikipedia.org/wiki/Cultivation">cultivation techniques</a>, <a href="https://en.wikipedia.org/wiki/Soil_management">soil management</a>, and <a href="https://en.wikipedia.org/wiki/Pest_control">pest control</a>. The goal is to create a structured database to help organize and enhance knowledge of horticulture.</p>
-        <p>Whether exploring different <a href="https://en.wikipedia.org/wiki/Plant_species">plant species</a>, learning about effective <a href="https://en.wikipedia.org/wiki/Gardening">gardening practices</a>, or discovering ways to manage <a href="https://en.wikipedia.org/wiki/Soil">soil and water</a>, this database serves as a valuable reference. The information is compiled to provide a thorough understanding of horticulture and to support ongoing learning and discovery in this field.</p>
-
-        <div class="section">
-            <h2>Introduction to Horticulture</h2>
-            <p>Horticulture is the science and art of growing plants. This includes <a href="https://en.wikipedia.org/wiki/Fruit">fruits</a>, <a href="https://en.wikipedia.org/wiki/Vegetable">vegetables</a>, <a href="https://en.wikipedia.org/wiki/Nut_(fruit)">nuts</a>, <a href="https://en.wikipedia.org/wiki/Seed">seeds</a>, <a href="https://en.wikipedia.org/wiki/Herb">herbs</a>, <a href="https://en.wikipedia.org/wiki/Sprouting">sprouts</a>, <a href="https://en.wikipedia.org/wiki/Mushroom">mushrooms</a>, <a href="https://en.wikipedia.org/wiki/Algae">algae</a>, <a href="https://en.wikipedia.org/wiki/Flower">flowers</a>, <a href="https://en.wikipedia.org/wiki/Seaweed">seaweeds</a>, and non-food crops such as <a href="https://en.wikipedia.org/wiki/Grass">grass</a> and <a href="https://en.wikipedia.org/wiki/Ornamental_plant">ornamental trees and plants</a>. It also encompasses <a href="https://en.wikipedia.org/wiki/Plant_conservation">plant conservation</a>, <a href="https://en.wikipedia.org/wiki/Landscape_restoration">landscape restoration</a>, <a href="https://en.wikipedia.org/wiki/Soil_management">soil management</a>, <a href="https://en.wikipedia.org/wiki/Landscape_design">landscape and garden design</a>, <a href="https://en.wikipedia.org/wiki/Landscape_construction">construction</a>, and <a href="https://en.wikipedia.org/wiki/Landscape_maintenance">maintenance</a>.</p>
-            <p>Start exploring by reading about <a href="https://en.wikipedia.org/wiki/Horticulture">what horticulture entails</a>.</p>
+        <h1>Horticulture Overview</h1>
+        <div class="header-section">
+            <div>
+                <p><strong>Introduction:</strong> <a href="https://en.wikipedia.org/wiki/Horticulture">Horticulture</a> is the art and science of growing <a href="https://en.wikipedia.org/wiki/Fruit">fruits</a>, <a href="https://en.wikipedia.org/wiki/Vegetable">vegetables</a>, <a href="https://en.wikipedia.org/wiki/Flower">flowers</a>, and ornamental plants. It encompasses a wide range of activities from <a href="https://en.wikipedia.org/wiki/Plant_propagation">plant propagation</a> to <a href="https://en.wikipedia.org/wiki/Landscape_design">landscape design</a> and plays a crucial role in <a href="https://en.wikipedia.org/wiki/Food_production">food production</a>, <a href="https://en.wikipedia.org/wiki/Sustainability">environmental sustainability</a>, and <a href="https://en.wikipedia.org/wiki/Human_well-being">human well-being</a>.</p>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Key Areas of Horticulture</h2>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Plant">Plant Types</a>: Discover various plant types and their characteristics.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Cultivation">Cultivation Techniques</a>: Learn about different methods of cultivating plants.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Soil_management">Soil & Water Management</a>: Understand the essentials of managing soil health and water for optimal plant growth.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Pest_control">Pest & Disease Control</a>: Get information on how to manage pests and diseases that affect plants.</li>
-            </ul>
-        </div>
+        <h2>Branches of Horticulture</h2>
+        <ul>
+            <li><strong><a href="https://en.wikipedia.org/wiki/Pomology">Pomology</a>:</strong> The cultivation of fruit.</li>
+            <li><strong><a href="https://en.wikipedia.org/wiki/Olericulture">Olericulture</a>:</strong> The cultivation of vegetables.</li>
+            <li><strong><a href="https://en.wikipedia.org/wiki/Floriculture">Floriculture</a>:</strong> The cultivation of flowers.</li>
+            <li><strong><a href="https://en.wikipedia.org/wiki/Landscape_horticulture">Landscape Horticulture</a>:</strong> The design and maintenance of landscapes.</li>
+        </ul>
 
-        <div class="section">
-            <h2>Why Study Horticulture?</h2>
-            <p>Studying horticulture helps you to appreciate the complexity of plant life and the environment. It provides the knowledge needed to cultivate plants effectively, ensuring they thrive and contribute to ecological balance. Moreover, horticulture offers numerous benefits, including <a href="https://en.wikipedia.org/wiki/Food_production">food production</a>, <a href="https://en.wikipedia.org/wiki/Aesthetics">aesthetic value</a>, and <a href="https://en.wikipedia.org/wiki/Mental_health">psychological well-being</a>.</p>
-            <p>Learn more about the <a href="https://en.wikipedia.org/wiki/Benefits_of_gardening">benefits of horticulture</a>.</p>
-        </div>
+        <h2>Horticultural Practices</h2>
+        <p>Key horticultural practices include <a href="https://en.wikipedia.org/wiki/Plant_propagation">plant propagation methods</a> (such as seeds, cuttings, and grafting), <a href="https://en.wikipedia.org/wiki/Soil_management">soil preparation and management</a>, <a href="https://en.wikipedia.org/wiki/Irrigation">irrigation techniques</a>, and <a href="https://en.wikipedia.org/wiki/Pest_control">pest and disease management</a>.</p>
 
-        <div class="section">
-            <h2>Get Started</h2>
-            <p>To begin your journey into horticulture, start with the <a href="https://en.wikipedia.org/wiki/Horticulture">basics</a> and gradually explore more advanced topics. Use the links provided to delve into specific areas of interest, and don't hesitate to reach out if you have any questions.</p>
-        </div>
+        <h2>Horticultural Tools and Equipment</h2>
+        <p>Essential tools for horticulture include <a href="https://en.wikipedia.org/wiki/Pruning_shears">pruners</a>, <a href="https://en.wikipedia.org/wiki/Trowel_(gardening)">trowels</a>, <a href="https://en.wikipedia.org/wiki/Spade">spades</a>, and <a href="https://en.wikipedia.org/wiki/Garden_hose">hoses</a>. Advances in technology have led to the development of sophisticated equipment for large-scale horticultural operations.</p>
 
-        <div class="section">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need further information, feel free to <a href="#">contact us</a>. Our team of horticulture enthusiasts is here to assist you.</p>
-        </div>
+        <h2>Plant Care and Maintenance</h2>
+        <p>Proper <a href="https://en.wikipedia.org/wiki/Plant_care">plant care</a> involves <a href="https://en.wikipedia.org/wiki/Fertilization">fertilization</a>, <a href="https://en.wikipedia.org/wiki/Pruning">pruning</a>, <a href="https://en.wikipedia.org/wiki/Training_(horticulture)">training</a>, and seasonal maintenance. Each plant species has specific requirements for optimal growth and health.</p>
+
+        <h2>Environmental and Ecological Impact</h2>
+        <p>Sustainable horticultural practices are vital for preserving <a href="https://en.wikipedia.org/wiki/Biodiversity">biodiversity</a> and promoting environmental health. Horticulture also contributes to urban green spaces, improving <a href="https://en.wikipedia.org/wiki/Air_quality">air quality</a> and reducing <a href="https://en.wikipedia.org/wiki/Urban_heat_island">heat islands</a>.</p>
+
+        <h2>Horticultural Education and Careers</h2>
+        <p>Educational programs in horticulture range from certificates to advanced degrees. Career opportunities include roles such as <a href="https://en.wikipedia.org/wiki/Horticulturist">horticulturists</a>, <a href="https://en.wikipedia.org/wiki/Landscape_design">landscape designers</a>, and <a href="https://en.wikipedia.org/wiki/Arborist">arborists</a>.</p>
+
+        <h2>Innovations in Horticulture</h2>
+        <p>Recent innovations include <a href="https://en.wikipedia.org/wiki/Hydroponics">hydroponics</a>, <a href="https://en.wikipedia.org/wiki/Aquaponics">aquaponics</a>, and <a href="https://en.wikipedia.org/wiki/Vertical_farming">vertical farming</a>, which allow for efficient and sustainable plant cultivation in various environments.</p>
+
+        <h2>Horticultural Societies and Organizations</h2>
+        <p>There are many societies dedicated to horticulture, providing resources and support for professionals and enthusiasts. Examples include the <a href="https://en.wikipedia.org/wiki/American_Horticultural_Society">American Horticultural Society</a> and the <a href="https://en.wikipedia.org/wiki/Royal_Horticultural_Society">Royal Horticultural Society</a>.</p>
+
+        <h2>Case Studies and Success Stories</h2>
+        <p>Explore successful horticultural projects and inspirational stories from renowned horticulturists, demonstrating the impact and potential of horticulture.</p>
+
+        <h2>Glossary of Horticultural Terms</h2>
+        <p>A comprehensive glossary of common horticultural terms to help you understand the language of horticulture.</p>
+
+        <h1>END OF DOCUMENT</h1>
     </div>
 </body>
-
 </html>

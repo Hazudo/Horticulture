@@ -13,12 +13,19 @@
             background-color: #3a3a3a;
             color: #D3D3D3;
         }
-        .navbar {
+        .navbar-container {
+            display: flex;
+            justify-content: center;
             background-color: #1a1a1a;
-            overflow: hidden;
+        }
+        .navbar {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .navbar a {
-            float: left;
             display: block;
             color: #f2f2f2;
             text-align: center;
@@ -36,14 +43,6 @@
             background-color: #4B4B4B;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-        .header-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .header-section div {
-            flex: 1;
         }
         h1 {
             font-size: 22px;
@@ -80,15 +79,17 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="homepage.html">Home</a>
-        <a href="branches.html">Branches</a>
-        <a href="practices.html">Practices</a>
-        <a href="tools.html">Tools</a>
-        <a href="plantcare.html">Plant Care</a>
-        <a href="environment.html">Environment</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="branches.html">Branches</a>
+            <a href="practices.html">Practices</a>
+            <a href="tools.html">Tools</a>
+            <a href="plantcare.html">Plant Care</a>
+            <a href="environment.html">Environment</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
 
     <div class="container">

@@ -3,133 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fleshy Fruit - Wikipedia</title>
+    <title>Horticulture Database - Horticulture Institute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #676767;
+            background-color: #3a3a3a;
+            color: #D3D3D3;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #464646;
+            color: black;
         }
         .container {
-            width: 60%;
-            margin: auto;
-            background-color: #4D4D4D;
-            color: #d3d3d3;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #4B4B4B;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
         }
-        nav {
-            background-color: #333;
-            color: white;
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .header-section div {
+            flex: 1;
+        }
+        .image-container {
+            max-width: 300px;
+            margin-left: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            background-color: #3D3D3D;
             padding: 10px;
+            text-align: center;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 15px;
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .image-container p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            color: #D3D3D3;
         }
         h1 {
-            font-size: 2em;
+            font-size: 22px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 2px;
         }
-        p {
-            margin-bottom: 1em;
+        h2 {
+            font-size: 18px;
+            color: #D3D3D3;
+            margin-top: 40px;
+            margin-bottom: -10px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 2px;
         }
-        a {
-            color: #a1c6e7;
-            text-decoration: none;
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #D3D3D3;
         }
-        a:hover {
-            text-decoration: underline;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 5px 0;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="navbar">
+        <a href="https://example.com/homepage.html">Home</a>
+        <a href="https://example.com/branches.html">Branches</a>
+        <a href="https://example.com/practices.html">Practices</a>
+        <a href="https://example.com/tools.html">Tools</a>
+        <a href="https://example.com/plantcare.html">Plant Care</a>
+        <a href="https://example.com/environment.html">Environment</a>
+        <a href="https://example.com/education.html">Education</a>
+        <a href="https://example.com/contact.html">Contact</a>
+    </div>
+
     <div class="container">
-        <h1>Fleshy Fruit</h1>
-        <p><strong>Fleshy fruits</strong> are a type of fruit in which the pericarp (the part of a fruit formed from the ovary after flowering) is soft and succulent when mature. These fruits are typically juicy and edible, and they play an important role in the diet of many animals, including humans.</p>
+        <h1>Horticulture Overview</h1>
+        <div class="header-section">
+            <div>
+                <p><strong>Introduction to Horticulture:</strong> Horticulture is the art and science of growing fruits, vegetables, flowers, and ornamental plants. It plays a crucial role in food production, environmental sustainability, and human well-being.</p>
+                <p><strong>Branches of Horticulture:</strong> The main branches include pomology (fruit cultivation), olericulture (vegetable cultivation), floriculture (flower cultivation), and landscape horticulture (design and maintenance of landscapes).</p>
+                <p><strong>Horticultural Practices:</strong> Important practices include plant propagation, soil management, irrigation, and pest control.</p>
+            </div>
+            <div class="image-container">
+                <img src="https://example.com/horticulture-image.jpg" alt="Horticulture Image">
+                <p>Horticultural practices in action</p>
+            </div>
+        </div>
 
-        <h2>Types of Fleshy Fruits</h2>
-        <h3>Berries</h3>
-        <p><a href="https://en.wikipedia.org/wiki/Berry">Berries</a> are simple fleshy fruits that develop from a single ovary and contain one or more seeds embedded in the flesh. Examples include <a href="https://en.wikipedia.org/wiki/Tomato">tomatoes</a>, <a href="https://en.wikipedia.org/wiki/Grape">grapes</a>, and <a href="https://en.wikipedia.org/wiki/Banana">bananas</a>.</p>
+        <h2>Horticultural Tools and Equipment</h2>
+        <p>Essential tools for horticulture include pruners, trowels, spades, and hoses. Advances in technology have led to the development of sophisticated equipment for large-scale horticultural operations.</p>
 
-        <h3>Drupes</h3>
-        <p><a href="https://en.wikipedia.org/wiki/Drupe">Drupes</a>, also known as stone fruits, have an outer fleshy part surrounding a single hard shell, or pit, which contains the seed. Examples include <a href="https://en.wikipedia.org/wiki/Cherry">cherries</a>, <a href="https://en.wikipedia.org/wiki/Peach">peaches</a>, and <a href="https://en.wikipedia.org/wiki/Plum">plums</a>.</p>
+        <h2>Plant Care and Maintenance</h2>
+        <p>Proper plant care involves fertilization, pruning, training, and seasonal maintenance. Each plant species has specific requirements for optimal growth and health.</p>
 
-        <h3>Pomes</h3>
-        <p><a href="https://en.wikipedia.org/wiki/Pome">Pomes</a> are fleshy fruits with a core containing seeds, surrounded by a tough membrane. The edible flesh is derived from the ovary and surrounding tissue. Examples include <a href="https://en.wikipedia.org/wiki/Apple">apples</a> and <a href="https://en.wikipedia.org/wiki/Pear">pears</a>.</p>
+        <h2>Environmental and Ecological Impact</h2>
+        <p>Sustainable horticultural practices are vital for preserving biodiversity and promoting environmental health. Horticulture also contributes to urban green spaces, improving air quality and reducing heat islands.</p>
 
-        <h3>Hesperidia</h3>
-        <p><a href="https://en.wikipedia.org/wiki/Hesperidium">Hesperidia</a> are modified berries with a leathery rind and segmented, juicy interior. Examples include <a href="https://en.wikipedia.org/wiki/Orange_(fruit)">oranges</a>, <a href="https://en.wikipedia.org/wiki/Lemon">lemons</a>, and <a href="https://en.wikipedia.org/wiki/Lime_(fruit)">limes</a>.</p>
+        <h2>Horticultural Education and Careers</h2>
+        <p>Educational programs in horticulture range from certificates to advanced degrees. Career opportunities include roles such as horticulturists, landscape designers, and arborists.</p>
 
-        <h2>Structure of Fleshy Fruits</h2>
-        <p>Fleshy fruits consist of three main layers:</p>
-        <ul>
-            <li><strong>Exocarp</strong>: The outermost layer, also known as the skin or peel.</li>
-            <li><strong>Mesocarp</strong>: The middle layer, which is usually fleshy and juicy.</li>
-            <li><strong>Endocarp</strong>: The innermost layer, which surrounds the seeds. In drupes, this layer forms a hard stone.</li>
-        </ul>
+        <h2>Innovations in Horticulture</h2>
+        <p>Recent innovations include hydroponics, aquaponics, and vertical farming, which allow for efficient and sustainable plant cultivation in various environments.</p>
 
-        <h2>Role in Plant Reproduction</h2>
-        <p>Fleshy fruits play a significant role in <a href="https://en.wikipedia.org/wiki/Seed_dispersal">seed dispersal</a>. Their appealing taste and nutritious content attract animals, who consume the fruits and later excrete the seeds at different locations, aiding in the propagation of the plant species.</p>
+        <h2>Horticultural Societies and Organizations</h2>
+        <p>There are many societies dedicated to horticulture, providing resources and support for professionals and enthusiasts. Examples include the American Horticultural Society and the Royal Horticultural Society.</p>
 
-        <h2>Nutritional Benefits</h2>
-        <p>Fleshy fruits are rich in essential nutrients and contribute significantly to a healthy diet:</p>
-        <ul>
-            <li><strong>Vitamins</strong>: High in vitamins such as <a href="https://en.wikipedia.org/wiki/Vitamin_C">Vitamin C</a> and <a href="https://en.wikipedia.org/wiki/Vitamin_A">Vitamin A</a>.</li>
-            <li><strong>Minerals</strong>: Provide important minerals like <a href="https://en.wikipedia.org/wiki/Potassium">potassium</a> and <a href="https://en.wikipedia.org/wiki/Magnesium">magnesium</a>.</li>
-            <li><strong>Fiber</strong>: Excellent source of dietary fiber, which aids in digestion.</li>
-            <li><strong>Antioxidants</strong>: Contain antioxidants that help protect cells from damage.</li>
-        </ul>
+        <h2>Case Studies and Success Stories</h2>
+        <p>Explore successful horticultural projects and inspirational stories from renowned horticulturists, demonstrating the impact and potential of horticulture.</p>
 
-        <h2>Examples of Common Fleshy Fruits</h2>
-        <h3>Apples (<a href="https://en.wikipedia.org/wiki/Malus_domestica">Malus domestica</a>)</h3>
-        <ul>
-            <li><strong>Type</strong>: Pome</li>
-            <li><strong>Climate</strong>: Temperate</li>
-            <li><strong>Uses</strong>: Fresh consumption, cooking, juice production</li>
-        </ul>
+        <h2>Glossary of Horticultural Terms</h2>
+        <p>A comprehensive glossary of common horticultural terms to help you understand the language of horticulture.</p>
 
-        <h3>Bananas (<a href="https://en.wikipedia.org/wiki/Musa_(genus)">Musa spp.</a>)</h3>
-        <ul>
-            <li><strong>Type</strong>: Berry</li>
-            <li><strong>Climate</strong>: Tropical and subtropical</li>
-            <li><strong>Uses</strong>: Fresh consumption, baking, smoothies</li>
-        </ul>
-
-        <h3>Oranges (<a href="https://en.wikipedia.org/wiki/Orange_(fruit)">Citrus sinensis</a>)</h3>
-        <ul>
-            <li><strong>Type</strong>: Hesperidium</li>
-            <li><strong>Climate</strong>: Subtropical to tropical</li>
-            <li><strong>Uses</strong>: Fresh consumption, juice production</li>
-        </ul>
-
-        <h3>Peaches (<a href="https://en.wikipedia.org/wiki/Peach">Prunus persica</a>)</h3>
-        <ul>
-            <li><strong>Type</strong>: Drupe</li>
-            <li><strong>Climate</strong>: Temperate</li>
-            <li><strong>Uses</strong>: Fresh consumption, cooking, canning</li>
-        </ul>
-
-        <h2>Challenges in Cultivation</h2>
-        <h3>Pests and Diseases</h3>
-        <p>Fleshy fruits are vulnerable to a variety of <a href="https://en.wikipedia.org/wiki/Insect">pests</a> and <a href="https://en.wikipedia.org/wiki/Plant_pathogen">diseases</a>. Effective management includes the use of <a href="https://en.wikipedia.org/wiki/Biological_pest_control">biological controls</a>, resistant varieties, and <a href="https://en.wikipedia.org/wiki/Integrated_pest_management">integrated pest management</a> techniques.</p>
-
-        <h3>Climate Sensitivity</h3>
-        <p>Fleshy fruits often require specific climatic conditions for optimal growth. Changes in <a href="https://en.wikipedia.org/wiki/Climate">climate</a> can impact yield and quality. Strategies to mitigate these impacts include selecting climate-resilient varieties and implementing advanced <a href="https://en.wikipedia.org/wiki/Irrigation">irrigation</a> systems.</p>
-
-        <h3>Post-Harvest Handling</h3>
-        <p>Proper post-harvest handling is crucial to maintain the quality and extend the shelf life of fleshy fruits. Techniques such as <a href="https://en.wikipedia.org/wiki/Refrigeration">refrigeration</a> and controlled atmosphere storage are commonly used.</p>
-
-        <h2>Conclusion</h2>
-        <p>Fleshy fruits are an important component of both human and animal diets due to their nutritional
+        <h1>END OF DOCUMENT</h1>
+    </div>
+</body>
+</html>
